@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с видео фоном</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pattaya&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <video autoplay muted loop class="video-background">
+        <source src="your-video.mp4" type="video/mp4">
+    </video>
+
+    <header class="header">
+        <h1 class="header__title">МafiaClub</h1>
+        <button class="header__toggle toggle">
+        <span class="toggle__line"></span>
+        <span class="toggle__line"></span>
+        <span class="toggle__line"></span>
+    </button>
+    </header>
+
+    <div class="columns">
+        <nav class="columns__nav">
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Главная</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">О Нас</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Галерея</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Правила</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="columns__main">
+            <div class="main__button-container">
+                <button class="main__button" onclick="alert('Вы нажали кнопку!')">Записаться на игру</button>
+            </div>
+        </main>
+
+        <aside class="columns__aside">
+              
+            
+        </aside>
+    </div>
+
+    <footer class="footer">
+         <div class="footer__columns">
+         <div class="footer__column">
+            <div class="footer__contact-item">                
+                <a href="https://t.me/+iTqGJhOwplQ5YmQy" class="footer__link">
+                    <i class="fa fa-telegram footer__icon"></i>
+                </a>
+                <span class="footer__contact-text">Наш чат:</span>
+            </div>
+        </div>   
+        <div class="footer__column">
+            <div class="footer__contact-item">                
+                <a href="https://t.me/+iTqGJhOwplQ5YmQy" class="footer__link">
+                    <i class="fa fa-telegram footer__icon"></i>
+                </a>
+                <span class="footer__contact-text">Организатор игр:</span>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__contact-item">                
+                <a href="https://t.me/+iTqGJhOwplQ5YmQy" class="footer__link">
+                    <i class="fa fa-telegram footer__icon"></i>
+                </a>
+                <span class="footer__contact-text">Ведущий игр:</span>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__contact-item">                
+                <a href="https://t.me/+iTqGJhOwplQ5YmQy" class="footer__link">
+                    <i class="fa fa-telegram footer__icon"></i>
+                </a>
+                <span class="footer__contact-text">Разработчик сайта:</span>
+            </div>
+        </div>
+    </div>
+    </footer>
+<script>
+    document.querySelector('.toggle').addEventListener('click', function() {
+        this.classList.toggle('toggle--active');
+        document.querySelector('.columns__nav').classList.toggle('columns__nav--active');
+    });
+
+
+</script>    
+</body>
+</html>
