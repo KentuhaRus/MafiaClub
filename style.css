@@ -325,7 +325,7 @@
 
 /* Третья линия (скрывается) */
 .toggle--active .toggle__line:nth-child(3) {
-    transform: translateX(100vw);
+    opacity: 0;
 }
 
 /* Адаптивные стили для мобильных устройств */
